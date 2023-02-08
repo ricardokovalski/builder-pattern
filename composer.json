@@ -1,0 +1,29 @@
+{
+  "name": "ricardokovalski/builder-pattern",
+  "description": "Implementação do Pattern Builder.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Ricardo Kovalski Cruz",
+      "email": "ricardokovalskicruz@gmail.com",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["design", "design-pattern", "pattern", "builder", "php"],
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "RicardoKovalski\\BuilderPattern\\": "src/",
+      "RicardoKovalski\\Examples\\": "examples/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
