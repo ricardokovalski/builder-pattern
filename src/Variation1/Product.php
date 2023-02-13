@@ -14,8 +14,8 @@ class Product
         return $this;
     }
 
-    public function getSteps(): string
+    public function getSteps(): array
     {
-        return implode(", ", $this->steps);
+        return $this->steps;
     }
 }

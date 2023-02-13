@@ -8,7 +8,19 @@ require __DIR__ . '/../../vendor/autoload.php';
 
 $builder = new ConcreteBuilder();
 $builder->buildStepA();
-$builder->buildStepB();
+$builder->buildStepC();
+$product = $builder->build();
+var_dump($product);
 
-echo "Build product:\n";
-echo $builder->build()->getSteps();
+/*
+Build product:
+object(RicardoKovalski\BuilderPattern\Variation2\Product)#2 (1) {
+  ["steps":"RicardoKovalski\BuilderPattern\Variation2\Product":private]=>
+  array(2) {
+    [0]=>
+    string(6) "step A"
+    [1]=>
+    string(6) "step C"
+  }
+}
+*/

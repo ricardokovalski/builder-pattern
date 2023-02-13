@@ -17,6 +17,6 @@ class Order
         public readonly float $interest,
         public readonly \DateTimeImmutable $createdAt,
         public readonly ?\DateTimeImmutable $paidAt = null,
-        public readonly ?\DateTimeImmutable $refunddAt = null
+        public readonly ?\DateTimeImmutable $refundAt = null
     ) {}
 }

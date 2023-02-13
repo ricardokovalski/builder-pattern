@@ -12,6 +12,11 @@ class ConcreteBuilder implements Builder
     {
         $this->reset();
     }
+
+    public function build(): Product
+    {
+        return $this->product;
+    }
     
     public function reset(): void
     {
@@ -31,12 +36,5 @@ class ConcreteBuilder implements Builder
     public function buildStepC(): void
     {
         $this->product->append('step C');
-    }
-
-    public function build(): Product
-    {
-        $product = $this->product;
-        $this->reset();
-        return $product;
     }
 }
