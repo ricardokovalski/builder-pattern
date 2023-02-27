@@ -15,7 +15,9 @@ class ConcreteBuilder implements Builder
 
     public function build(): Product
     {
-        return $this->product;
+        $product = $this->product;
+        $this->reset();
+        return $product;
     }
     
     public function reset(): void
